@@ -1,0 +1,37 @@
+{
+  "name": "protected-ts",
+  "version": "0.0.1",
+  "description": "Decorators for TypeScript classes to allow for controlled updating of properties",
+  "main": "build/main/index.js",
+  "typings": "build/main/index.d.ts",
+  "module": "build/module/index.js",
+  "repository": "https://github.com/stewartmcgown/protected",
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "decorator",
+    "protect"
+  ],
+  "scripts": {
+    "build:main": "tsc -p tsconfig.json",
+    "build:module": "rimraf build && tsc -p tsconfig.module.json",
+    "fix": "tslint --fix --project .",
+    "test": "npm run build && npm run test:*",
+    "test:lint": "tslint --project . && prettier \"src/**/*.ts\" --list-different",
+    "test:unit": "cross-env NODE_ENV=test jest"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
+    "rimraf": "^3.0.0",
+    "run-s": "0.0.0",
+    "tslint": "^5.19.0",
+    "typescript": "^3.6.2"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  }
+}

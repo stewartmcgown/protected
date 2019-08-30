@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "outDir": "build/main",
+    "rootDir": "src",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "declaration": true,
+    "inlineSourceMap": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": [
+      "es5",
+      "es6",
+      "dom",
+      "esnext"
+    ],
+    "typeRoots": ["types/**/*.ts"]
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules/**"],
+  "compileOnSave": false
+}
