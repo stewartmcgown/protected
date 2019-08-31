@@ -1,6 +1,6 @@
 {
   "name": "protected-ts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Decorators for TypeScript classes to allow for controlled updating of properties",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",

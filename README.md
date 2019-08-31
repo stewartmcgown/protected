@@ -14,7 +14,7 @@ The best example to give is the one that this module was written for, an Article
 class Article {
   public title: string
 
-  public submissionDate: Date
+  public date: string
 
   public status: string
 }
