@@ -122,7 +122,7 @@ export function attemptUpdate(target: object, update: object, options: AttemptUp
 
     Object.entries(update).forEach(updateEntries => {
         const [propertyKey, updateValue] = updateEntries;
-        const meta: ProtectionRules = Reflect.getMetadata(getMetadataKey(propertyKey), target);
+        const meta: ProtectionRules = (Reflect as any).getMetadata(getMetadataKey(propertyKey), target);
 
         if (!(propertyKey in target)) {
             return;

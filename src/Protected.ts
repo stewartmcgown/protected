@@ -21,6 +21,6 @@ import { ProtectionRules } from './Rules';
 export function Protected(options: ProtectionRules): PropertyDecorator {
     return (target: any, propertyKey: string | symbol): void => {
         const propertyName = propertyKey ? propertyKey.toString() : '';
-        Reflect.defineMetadata(getMetadataKey(propertyName), options, target);
+        (Reflect as any).defineMetadata(getMetadataKey(propertyName), options, target);
     };
 }

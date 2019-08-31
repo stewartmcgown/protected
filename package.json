@@ -31,7 +31,7 @@
     "tslint": "^5.19.0",
     "typescript": "^3.6.2"
   },
-  "dependencies": {
+  "peerDependencies": {
     "reflect-metadata": "^0.1.13"
   },
   "main": "build/module/index.js",
